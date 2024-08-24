@@ -1,0 +1,12 @@
+[package]
+name = "lbytes"
+version = "0.1.0"
+edition = "2021"
+description = "Incredibly simple byte read/write library"
+license = "MIT OR Apache-2.0"
+documentation = "https://docs.rs/lbytes"
+repository = "https://github.com/lillianrubyrose/lbytes"
+
+[dependencies]
+paste = "1.0.15"
+thiserror = "1.0.63"
