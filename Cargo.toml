@@ -1,6 +1,6 @@
 [package]
 name = "lbytes"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Incredibly simple byte read/write library"
 license = "MIT OR Apache-2.0"

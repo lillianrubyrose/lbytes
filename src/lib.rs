@@ -28,6 +28,9 @@ pub trait BytesReadExt: Read + Seek {
 	define_integral_r!(i64, 8);
 	define_integral_r!(u64, 8);
 
+	define_integral_r!(i128, 16);
+	define_integral_r!(u128, 16);
+
 	fn read_to_vec(&mut self) -> Result<Vec<u8>, Error> {
 		let mut buf = Vec::new();
 		self.read_to_end(&mut buf)?;
@@ -74,6 +77,9 @@ pub trait BytesWriteExt: Write {
 
 	define_write!(i64);
 	define_write!(u64);
+
+	define_write!(i128);
+	define_write!(u128);
 
 	define_write!(f32);
 	define_write!(f64);
@@ -134,6 +140,8 @@ mod tests {
 	define_test!(u32);
 	define_test!(i64);
 	define_test!(u64);
+	define_test!(i128);
+	define_test!(u128);
 	define_test!(f32);
 	define_test!(f64);
 }
